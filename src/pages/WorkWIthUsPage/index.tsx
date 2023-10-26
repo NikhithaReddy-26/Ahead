@@ -1,4 +1,4 @@
-import { Box, Stack, Typography, styled } from "@mui/material";
+import { Box, Typography, styled } from "@mui/material";
 import { WorkBoxes } from "../../components/molecules/WorkBoxes";
 import { data } from "../../utils/constants";
 import { AboutBox } from "../../components/molecules/AboutBox";
@@ -10,7 +10,7 @@ const WorkWrapper = styled(Box)({
 });
 const WorkBody = styled(Box)({
   height: "90vh",
- 
+
   backgroundColor: "#F3F1FF",
   borderRadius: "50px",
   display: "flex",
@@ -24,21 +24,21 @@ const StyledBox = styled(Box)({
   flexDirection: "column",
   gap: "20px",
   marginRight: "2%",
- paddingRight: "5%",
+  paddingRight: "5%",
   overflowY: "scroll",
   "::-webkit-scrollbar": {
     width: "5px",
-    padding: "10px"
+    padding: "10px",
   },
-  "::-webkit-scrollbar-track" :{
-    backgroundColor: "#FFFFFF"
+  "::-webkit-scrollbar-track": {
+    backgroundColor: "#FFFFFF",
   },
   "::-webkit-scrollbar-thumb": {
     backgroundColor: "#B3A0FA",
-    borderRadius: "4px"
+    borderRadius: "4px",
   },
   "::-webkit-scrollbar-thumb:hover": {
-    backgroundColor: "#555"
+    backgroundColor: "#555",
   },
 });
 
@@ -61,16 +61,17 @@ export const WorkWithUsPage = () => {
           </Box>
         </Box>
         <Box display={"flex"} justifyContent={"space-between"} height={"680px"}>
-        <AboutBox/>
-        <StyledBox>
-          {data.map((item) => (
-            <WorkBoxes
-              key={item.id}
-              title={item.title}
-              content={item.content}
-            />
-          ))}
-        </StyledBox></Box>
+          <AboutBox />
+          <StyledBox>
+            {data.map((item) => (
+              <WorkBoxes
+                key={item.id}
+                title={item.title}
+                content={item.content}
+              />
+            ))}
+          </StyledBox>
+        </Box>
       </WorkBody>
     </WorkWrapper>
   );

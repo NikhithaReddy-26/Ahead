@@ -9,6 +9,7 @@ import { StartTestPage } from "../../../pages/StartTestPage";
 import { LandingPage } from "../../../pages/LandingPage";
 import { WorkWithUsPage } from "../../../pages/WorkWIthUsPage";
 import { WorkBoxes } from "../WorkBoxes";
+import { MeetPage } from "../../../pages/MeetPage";
 const Wrapper = styled(Box)({
   height: "100px",
   display: "flex",
@@ -70,6 +71,7 @@ export const Navbar = () => {
       </Wrapper>
      <LandingPage/>
       <EqPage />
+      <MeetPage/>
       <StartTestPage />
       <WorkWithUsPage/>
       </>
