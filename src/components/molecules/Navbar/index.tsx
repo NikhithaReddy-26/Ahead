@@ -6,6 +6,7 @@ import download from "../../../../public/images/download.png";
 import logo from "../../../../public/images/logo.png";
 import { EqPage } from "../../../pages/EqPage";
 import { StartTestPage } from "../../../pages/StartTestPage";
+import { LandingPage } from "../../../pages/LandingPage";
 const Wrapper = styled(Box)({
   height: "100px",
   display: "flex",
@@ -13,12 +14,11 @@ const Wrapper = styled(Box)({
   justifyContent: "space-between",
   padding: "5px 200px 5px 200px",
   zIndex: 1,
-  position: "fixed", // Set the position to fixed
-  top: 0, // Fixed to the top of the screen
-  left: 0, // Fixed to the left of the screen
-  width: "100%", // Expand to the full width
-  backgroundColor: "white", // Set the background color if needed
-  // border: "1px solid black"
+  position: "fixed", 
+  top: 0, 
+  left: 0, 
+  width: "100%", 
+  backgroundColor: "white", 
 });
 
 const MidWrapper = styled(Box)({
@@ -66,25 +66,7 @@ export const Navbar = () => {
           }}
         />
       </Wrapper>
-      <LandingBodyWrapper>
-        <LandingBody>
-          <Box
-            width={"45%"}
-            display={"flex"}
-            flexDirection={"column"}
-            gap={"35px"}
-          >
-            <Typography variant="b2">{"Ahead app"}</Typography>
-            <Typography variant="b1">
-              {"Master your life by mastering emotions"}
-            </Typography>
-          </Box>
-          <Box width={"70%"} display={"flex"} gap={"35px"}>
-            <Icon src={download} />
-            <Icon src={stars} />
-          </Box>
-        </LandingBody>
-      </LandingBodyWrapper>
+     <LandingPage/>
       <EqPage />
       <StartTestPage />
     </>
