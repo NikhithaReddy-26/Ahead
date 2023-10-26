@@ -52,6 +52,7 @@ declare module '@mui/material/styles' {
     b4: TypographyStyle
     c1: TypographyStyle
     c2: TypographyStyle
+    b5: TypographyStyle
     button: TypographyStyle
     overline: TypographyStyle
   }
@@ -66,6 +67,7 @@ declare module '@mui/material/styles' {
     b4: TypographyStyle
     c1: TypographyStyle
     c2: TypographyStyle
+    b5: TypographyStyle
     button: TypographyStyle
     overline: TypographyStyle
   }
@@ -86,6 +88,7 @@ declare module '@mui/material/Typography' {
     b4: true
     c1: true
     c2: true
+    b5: true
     button: true
     overline: true
   }
@@ -214,10 +217,18 @@ const theme = createTheme({
         lineHeight: '2rem',
       },
     },
+    b5: {
+      '@media (max-width:1920px)': {
+        fontFamily: 'Graphik-Semibold',
+        fontSize: '55px',
+        fontWeight: '400',
+        lineHeight: '2rem',
+      },
+    },
     c1: {
       '@media (max-width:1920px)': {
         fontFamily: 'Graphik-Medium',
-        fontSize: '0.875rem',
+        fontSize: '25px',
         fontWeight: '500',
         lineHeight: '1rem',
       },

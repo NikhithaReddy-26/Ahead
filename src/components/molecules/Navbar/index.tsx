@@ -7,6 +7,8 @@ import logo from "../../../../public/images/logo.png";
 import { EqPage } from "../../../pages/EqPage";
 import { StartTestPage } from "../../../pages/StartTestPage";
 import { LandingPage } from "../../../pages/LandingPage";
+import { WorkWithUsPage } from "../../../pages/WorkWIthUsPage";
+import { WorkBoxes } from "../WorkBoxes";
 const Wrapper = styled(Box)({
   height: "100px",
   display: "flex",
@@ -69,6 +71,7 @@ export const Navbar = () => {
      <LandingPage/>
       <EqPage />
       <StartTestPage />
-    </>
+      <WorkWithUsPage/>
+      </>
   );
 };

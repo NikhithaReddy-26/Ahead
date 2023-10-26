@@ -3,6 +3,7 @@ import { Navbar } from './components/molecules/Navbar'
 import './styles.css'
 import theme from './utils/theme'
 import { EqPage } from './pages/EqPage'
+import { AboutBox } from './components/molecules/AboutBox'
 
 
 

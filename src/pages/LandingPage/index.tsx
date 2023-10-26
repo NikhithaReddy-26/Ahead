@@ -40,5 +40,6 @@ export const LandingPage = ()=>{
     <Icon src={stars} />
   </Box>
 </LandingBody>
-</LandingBodyWrapper>)
+</LandingBodyWrapper>
+)
 }

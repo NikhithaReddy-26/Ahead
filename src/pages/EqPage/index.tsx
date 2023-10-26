@@ -1,4 +1,4 @@
-import { Box, Divider, Typography, styled } from "@mui/material";
+import { Box, Typography, styled } from "@mui/material";
 import { Icon } from "../../components/atoms/Icon";
 import one from "../../../public/images/one.png";
 import two from "../../../public/images/two.png";
