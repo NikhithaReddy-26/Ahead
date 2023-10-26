@@ -1,90 +1,103 @@
-import { createTheme } from "@mui/material/styles";
+import { createTheme } from '@mui/material/styles'
+import '../../index.css'
 
-declare module "@mui/material/styles" {
+declare module '@mui/material/styles' {
   interface PaletteColor {
-    100: string;
-    300: string;
-    500: string;
-    700: string;
-    900: string;
+    100: string
+    300: string
+    500: string
+    700: string
+    900: string
   }
   interface CustomPalette {
     semantic: {
       success: {
-        100: string;
-        500: string;
-      };
+        100: string
+        500: string
+      }
       warning: {
-        100: string;
-        300: string;
-      };
+        100: string
+        300: string
+      }
       error: {
-        100: string;
-        500: string;
-      };
-    };
+        100: string
+        500: string
+      }
+    }
     gray: {
-      50: string;
-      100: string;
-      300: string;
-      500: string;
-      700: string;
-      900: string;
-      white: string;
-    };
-    currency: {
-      100: string;
-      200: string;
-      300: string;
-      400: string;
-      500: string;
-      600: string;
-      700: string;
-    };
+      50: string
+      100: string
+      300: string
+      500: string
+      700: string
+      900: string
+      white: string
+    }
   }
 
   interface TypeText {
-    highemp: string;
-    medemp: string;
-    lowemp: string;
+    highemp: string
+    medemp: string
+    lowemp: string
   }
 
   interface TypographyVariants {
-    h1: TypographyStyle;
-    b3: TypographyStyle;
-    b4: TypographyStyle;
-    c1: TypographyStyle;
-    c2: TypographyStyle;
+    h4: TypographyStyle
+    h6: TypographyStyle
+    subtitle1: TypographyStyle
+    subtitle2: TypographyStyle
+    b1: TypographyStyle
+    b2: TypographyStyle
+    b3: TypographyStyle
+    b4: TypographyStyle
+    c1: TypographyStyle
+    c2: TypographyStyle
+    button: TypographyStyle
+    overline: TypographyStyle
   }
   interface TypographyVariantsOptions {
-    h1: TypographyStyle;
-    b3: TypographyStyle;
-    b4: TypographyStyle;
-    c1: TypographyStyle;
-    c2: TypographyStyle;
+    h4: TypographyStyle
+    h6: TypographyStyle
+    subtitle1: TypographyStyle
+    subtitle2: TypographyStyle
+    b1: TypographyStyle
+    b2: TypographyStyle
+    b3: TypographyStyle
+    b4: TypographyStyle
+    c1: TypographyStyle
+    c2: TypographyStyle
+    button: TypographyStyle
+    overline: TypographyStyle
   }
 
   interface Palette extends CustomPalette {}
   interface PaletteOptions extends CustomPalette {}
 }
 
-declare module "@mui/material/Typography" {
+declare module '@mui/material/Typography' {
   interface TypographyPropsVariantOverrides {
-    h1: true;
-    b3: true;
-    b4: true;
-    c1: true;
-    c2: true;
+    h4: true
+    h6: true
+    subtitle1: true
+    subtitle2: true
+    b3: true
+    b1: true
+    b2: true
+    b4: true
+    c1: true
+    c2: true
+    button: true
+    overline: true
   }
 }
 
 interface TypographyStyle {
-  "@media (max-width:1920px)": {
-    fontFamily: string;
-    fontWeight: string;
-    fontSize: string;
-    lineHeight: string;
-  };
+  '@media (max-width:1920px)': {
+    fontFamily: string
+    fontSize: string
+    fontWeight: string
+    lineHeight: string
+  }
 }
 
 const theme = createTheme({
@@ -100,93 +113,140 @@ const theme = createTheme({
   spacing: [4, 8, 12, 16, 20, 24, 32],
   palette: {
     primary: {
-      100: "#FAFCFF",
-      300: "#CCE3FF",
-      500: "#0052FF",
-      700: "#002EB7",
-      900: "#00177A",
+      100: '#FAFCFF',
+      300: '#CCE3FF',
+      500: '#0052FF',
+      700: '#002EB7',
+      900: '#00177A',
     },
     semantic: {
       success: {
-        100: "#E9F7EC",
-        500: "#20B03F",
+        100: '#E9F7EC',
+        500: '#20B03F',
       },
       warning: {
-        100: "#FFF6ED",
-        300: "#FFA74F",
+        100: '#FFF6ED',
+        300: '#FFA74F',
       },
       error: {
-        100: "#F3E6EB",
-        500: "#B71A33",
+        100: '#F3E6EB',
+        500: '#B71A33',
       },
     },
     gray: {
-      50: "#F2F2F7",
-      100: "#E8E8F7",
-      300: "#B4B4CF",
-      500: "#4B4B60",
-      700: "#252545",
-      900: "#0E0E2E",
-      white: "#FFFFFF",
-    },
-    currency: {
-      100: "#F7931A33",
-      200: "#22222233",
-      300: "#E6007A33",
-      400: "#627EEA33",
-      500: "#26A17B33",
-      600: "#19197133",
-      700: "#DBC98433",
+      50: '#F2F2F7',
+      100: '#E8E8F7',
+      300: '#B4B4CF',
+      500: '#4B4B60',
+      700: '#252545',
+      900: '#0E0E2E',
+      white: '#FFFFFF',
     },
     text: {
-      highemp: "#1A1B25",
-      medemp: "#414552",
-      lowemp: "#6A7383",
+      highemp: '#343446',
+      medemp: '#7D7D89',
+      lowemp: '#B2B2B9',
     },
   },
 
   typography: {
-    h1: {
-      "@media (max-width:1920px)": {
-        fontFamily: "Helvetica",
-        fontWeight: "400",
-        fontSize: "28px",
-        lineHeight: "32px",
+    h4: {
+      '@media (max-width:1920px)': {
+        fontFamily: 'Graphik-Semibold',
+        fontSize: '2.5rem',
+        fontWeight: '500',
+        lineHeight: '3.375rem',
+      },
+    },
+    h6: {
+      '@media (max-width:1920px)': {
+        fontFamily: 'Graphik-Regular',
+        fontSize: '1.5rem',
+        fontWeight: '400',
+        lineHeight: '2.125rem',
+      },
+    },
+    subtitle1: {
+      '@media (max-width:1920px)': {
+        fontFamily: 'Graphik-Semibold',
+        fontSize: '1.25rem',
+        fontWeight: '500',
+        lineHeight: '1.75rem',
+      },
+    },
+    subtitle2: {
+      '@media (max-width:1920px)': {
+        fontFamily: 'Graphik-Regular',
+        fontSize: '1.25rem',
+        fontWeight: '400',
+        lineHeight: '1.75rem',
+      },
+    },
+    b1: {
+      '@media (max-width:1920px)': {
+        fontFamily: 'Graphik-Semibold',
+        fontSize: '90px',
+        fontWeight: '400',
+        lineHeight: '6rem',
+      },
+    },
+    b2: {
+      '@media (max-width:1920px)': {
+        fontFamily: 'Graphik-Regular',
+        fontSize: '1rem',
+        fontWeight: '400',
+        lineHeight: '1.375rem',
       },
     },
     b3: {
-      "@media (max-width:1920px)": {
-        fontFamily: "Helvetica",
-        fontWeight: "400",
-        fontSize: "14px",
-        lineHeight: "20px",
+      '@media (max-width:1920px)': {
+        fontFamily: 'Graphik-Semibold',
+        fontSize: '70px',
+        fontWeight: '400',
+        lineHeight: '6rem',
       },
     },
     b4: {
-      "@media (max-width:1920px)": {
-        fontFamily: "Helvetica",
-        fontWeight: "400",
-        fontSize: "14px",
-        lineHeight: "20px",
+      '@media (max-width:1920px)': {
+        fontFamily: 'Graphik-Semibold',
+        fontSize: '35px',
+        fontWeight: '400',
+        lineHeight: '2rem',
       },
     },
     c1: {
-      "@media (max-width:1920px)": {
-        fontFamily: "HelveticaNeue",
-        fontWeight: "400",
-        fontSize: "12px",
-        lineHeight: "18px",
+      '@media (max-width:1920px)': {
+        fontFamily: 'Graphik-Medium',
+        fontSize: '0.875rem',
+        fontWeight: '500',
+        lineHeight: '1rem',
       },
     },
     c2: {
-      "@media (max-width:1920px)": {
-        fontFamily: "HelveticaNeue",
-        fontWeight: "400",
-        fontSize: "11px",
-        lineHeight: "20px",
+      '@media (max-width:1920px)': {
+        fontFamily: 'Graphik-Regular',
+        fontSize: '0.875rem',
+        fontWeight: '400',
+        lineHeight: '1rem',
+      },
+    },
+    button: {
+      '@media (max-width:1920px)': {
+        fontFamily: 'Graphik-Semibold',
+        fontSize: '0.875rem',
+        fontWeight: '500',
+        lineHeight: '2.625rem',
+      },
+    },
+    overline: {
+      '@media (max-width:1920px)': {
+        fontFamily: 'Graphik-Regular',
+        fontSize: '0.75rem',
+        fontWeight: '400',
+        lineHeight: '0.875rem',
       },
     },
   },
-});
+})
 
 export default theme;
